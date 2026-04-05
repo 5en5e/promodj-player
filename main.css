@@ -1,0 +1,49 @@
+@import "./css/left-container.css";
+@import "./css/footer.css";
+@import "./css/tracklist.css";
+@import "./css/album.css";
+
+
+body{
+  padding: 0px;
+  margin:0px;
+}
+
+body.resizing {
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.split-container {
+  display: flex;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+.pane {
+  height: 100%;
+  -overflow: auto;
+}
+
+.left {
+  flex-basis: 10%;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: none;
+  min-width: 100px;
+}
+
+.divider {
+  width: 5px;
+  background-color: #999;
+  cursor: ew-resize;
+  user-select: none;
+}
+
+.right {
+  flex-grow: 1; 
+  -background-color: #e0e0e0;
+}
+

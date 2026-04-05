@@ -1,0 +1,41 @@
+.left-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.left-container .album{
+  -border: 1px solid red;
+  aspect-ratio: 1;
+  margin: 5px;
+  position: relative;
+  padding: 20px;
+  border-radius:5%;
+  user-select:none;
+  cursor: pointer;
+
+}
+
+
+.left-container .album .cover{
+  aspect-ratio: 1;
+  width:100%;
+  background-size: cover;
+  border-radius:50%;
+}
+
+.left-container .album:hover .cover{
+  border-radius:5%;
+}
+.left-container .album:hover{
+  background-color: rgba(140, 137, 137, 0.5);
+}
+
+
+
+
+.left-container .album .name{
+  text-align: center;
+  overflow: clip;
+  text-wrap-mode: nowrap;
+  text-overflow: ellipsis;
+}

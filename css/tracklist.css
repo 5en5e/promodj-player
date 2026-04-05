@@ -1,0 +1,62 @@
+
+.right-container .album .tracklist{
+  line-height:1.8;
+  flex: 1;
+  margin:0px;
+}
+
+.right-container .album .name{
+  text-align:center;
+  padding: 10px;
+  font-size: x-large;
+  font-style: italic;
+  margin-bottom: 5px;
+  color: rgba(140, 137, 137, 1);
+}
+
+
+.tracklist .play-pause {
+  background-color: #949090;
+  width: 0.7em;
+  display: inline-block;
+  aspect-ratio:0.8656;
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+  margin-right: 0.1em;
+}
+
+.cover-tracklist{
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  margin-inline: 5px;
+}
+
+.tracklist .track {
+  cursor: pointer;
+}
+.tracklist .track:is([active="true"]) {
+  background-color: rgba(200, 200, 200,0.5);
+}
+
+.tracklist .track:hover {
+  background-color: rgba(200, 200, 200,0.5);
+}
+
+.tracklist .track .track-performer {
+  color: rgba(137, 137, 137,1);
+}
+
+
+li:hover {
+  background-color: rgba(200, 200, 200,0.5);
+}
+
+
+
+li[active="false"] .play-pause {
+  visibility: hidden;
+}
+
+li:hover .play-pause {
+  visibility: visible;
+}

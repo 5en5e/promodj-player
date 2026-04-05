@@ -23,7 +23,6 @@ body.resizing {
 
 .pane {
   height: 100%;
-  -overflow: auto;
 }
 
 .left {
@@ -33,6 +32,7 @@ body.resizing {
   flex-direction: column;
   scrollbar-width: none;
   min-width: 100px;
+  overflow: auto;
 }
 
 .divider {
@@ -44,6 +44,5 @@ body.resizing {
 
 .right {
   flex-grow: 1; 
-  -background-color: #e0e0e0;
 }
 

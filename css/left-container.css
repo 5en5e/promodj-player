@@ -15,7 +15,6 @@
 
 }
 
-
 .left-container .album .cover{
   aspect-ratio: 1;
   width:100%;
@@ -26,12 +25,10 @@
 .left-container .album:hover .cover{
   border-radius:5%;
 }
+
 .left-container .album:hover{
   background-color: rgba(140, 137, 137, 0.5);
 }
-
-
-
 
 .left-container .album .name{
   text-align: center;

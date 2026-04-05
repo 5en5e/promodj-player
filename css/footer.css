@@ -8,7 +8,6 @@
   flex-direction: column;
 }
 
-
 .footer .sound{
   display: flex;
   margin: 5px;
@@ -16,7 +15,6 @@
   flex-grow: 1;
   justify-content: left;
 }
-
 
 .footer .order{
   height: 100px;
@@ -27,8 +25,6 @@
   flex-grow: 1;
   justify-content: center;
 }
-
-
 
 .footer .current-track{
   height: 20px;
@@ -92,17 +88,15 @@
     clip-path: polygon(0% 0%, 20% 0%, 20% 50%, 60% 0%, 60% 50%, 100% 0%, 100% 100%, 60% 50%, 60% 100%, 20% 50%, 20% 100%, 0% 100%, 0% 0%);
 }
 
-
-
 .footer .controls :is(.prev-wrapper, .next-wrapper, .play-pause-wrapper){
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
 }
+
 .footer .controls :is(.prev-wrapper, .next-wrapper, .play-pause-wrapper):hover{
   background-color: rgba(200, 200, 200,0.5);
 }
-
 
 .footer .controls .play-pause{
   width: 60px;
@@ -115,13 +109,10 @@
   justify-content: right;
 }
 
-
 .order .play-pause {
   width: 100%;
   cursor: pointer;
 }
-
-
 
 .footer .loop{
   font-size: xx-large;
@@ -137,9 +128,3 @@
 .footer .loop[state="on"]{
   background-color: rgba(200, 200, 200,0.5);
 }
-
-
-
-
-  
-

@@ -38,10 +38,11 @@ function updateProgressBar(time,value){
 }
 
 function getTrackByTime(time){
-  let tracks=document.querySelectorAll(".track ");
+  let tracks=document.querySelectorAll(".track");
   for (let x of tracks){
     let start = startTimeInSeconds(x);
-    let end = x.nextSibling?startTimeInSeconds(x.nextSibling):audio.duration;
+    let next = x.nextElementSibling;
+    let end = next ? startTimeInSeconds(next) : audio.duration;
     if ((time>=start && time<end)){
       return x;
     } else if (end==audio.duration){
@@ -65,7 +66,7 @@ function formatCurrentTime(currentTime){
 
 function populateAlbumList(){
   const parent = document.getElementsByClassName('left-container')[0];
-  for (item of allAlbums){
+  for (let item of allAlbums){
     const title = item.title;
 
     const album = document.createElement('div');
@@ -108,7 +109,7 @@ function setCurrentAlbum(id){
   
   const tracklist = document.getElementsByClassName('tracklist')[0];
   tracklist.innerHTML = '';
-  for (trackInfo of currentAlbum.tracks){
+  for (let trackInfo of currentAlbum.tracks){
     const track = document.createElement('li');
     track.classList.add('track');
     track.setAttribute("starttime",`${trackInfo.starttime}`);
@@ -182,7 +183,7 @@ function playCurrentTrack(){
 }
 
 function undecorateOldTrack(){
-  oldTrack = document.querySelector('.track[active="true"]');
+  let oldTrack = document.querySelector('.track[active="true"]');
   oldTrack?.querySelector(".play-pause").setAttribute("icon", "play");
   oldTrack?.setAttribute("active","false");
 }
@@ -309,7 +310,7 @@ document.querySelector(".audio-progress").addEventListener("click", (e) => {
   let prop = e.offsetX / e.currentTarget.getBoundingClientRect().width;
   audio.pause();
 
-  ct = Math.floor(prop*audio.duration);
+  let ct = Math.floor(prop*audio.duration);
   audio.currentTime=ct;
   currentTrack=getTrackByTime(audio.currentTime);
   undecorateOldTrack();

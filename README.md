@@ -4,6 +4,7 @@
 ![Screenshot](./assets/screenshot.png)
 ![Screenshot](./assets/screenshot-2.png)
 ![Screenshot](./assets/screenshot-3.png)
+![Screenshot](./assets/screenshot-4.png)
 
 
 ## 🔗 [▶ Live demo](https://5en5e.github.io/promodj-player/)

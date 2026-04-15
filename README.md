@@ -3,7 +3,6 @@
 ## 🖼 Screenshot
 ![Screenshot](./assets/screenshot.png)
 
-
 ## 🔗 [▶ Live demo](https://5en5e.github.io/promodj-player/)
 
 ---

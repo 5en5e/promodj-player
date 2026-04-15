@@ -1,64 +1,56 @@
 # promodj-player
 
-## 🖼 Screenshot
+## 🖼 Скриншот
+![Screenshot](./assets/screenshot.png)
 
-![App Screenshot](./assets/screenshot.png)
-
-## 🔗 [▶ Live demo](https://5en5e.github.io/promodj-player/)
-
----
-
-## 📌 What it is
-A web audio player that supports a tracklist within a single audio mix.
-Allows playing individual tracks marked by timestamps.
+## 🔗 [▶ Демо](https://5en5e.github.io/promodj-player/)
 
 ---
 
-## ⚙️ Features
-- Select an album from a predefined list
-- Select a track from the tracklist
-- Play / Pause
-- Skip to the next / previous track
-- Adjust volume and mute
-- Loop the current track
-- Display playback progress
-- Seek by clicking on the progress bar
+## 📌 Что это
+Веб-аудиоплеер с поддержкой трек-листа внутри одного аудиомикса.
+Позволяет воспроизводить отдельные треки, размеченные по таймингам.
 
 ---
 
-## 🧠 How it works
-- The configuration includes:
-  - URL of the audio mix
-  - A list of tracks with timestamps
-
-- Playback uses the `HTMLAudioElement`
-
-- Switching tracks is done by setting `audio.currentTime`
-
-- UI synchronization with playback is handled via the `timeupdate` event:
-  - Updates the progress bar
-  - Determines the current active track
+## ⚙️ Что умеет
+- выбор альбома из предзаданного списка
+- выбор трека из трек-листа
+- воспроизведение / пауза
+- переход к следующему / предыдущему треку
+- регулировка громкости и mute
+- режим зацикливания текущего трека
+- отображение прогресса воспроизведения
+- перемотка по клику на прогресс-бар
 
 ---
 
-## ⚠️ Known issues
-- `DOMException` appears in the console when switching tracks quickly
-  (caused by the browser aborting the current audio loading when `currentTime` is changed)
-
-- Poor UX on slow networks:
-  the "playing" state is set immediately, but actual playback starts with a delay
-  (can be improved by handling `canplay` / `loading` events and adding a loading indicator)
+## 🧠 Как работает
+- конфигурация содержит:
+  - URL аудиомикса
+  - список треков с таймингами
+- для воспроизведения используется HTMLAudioElement
+- переход к треку реализован через установку audio.currentTime
+- синхронизация UI с воспроизведением выполняется через событие timeupdate:
+  - обновляется прогресс-бар
+  - определяется текущий активный трек
 
 ---
 
-## 🚧 Future improvements
-- Handle the issues mentioned above
-- Refactor `main.js` into separate modules
-- Add the ability to download individual tracks
-- Display track time and title on hover over the progress bar
-- Use semantic HTML tags
-- Move logic from the DOM to JavaScript
-- Auto-generate configuration from .cue files
+## ⚠️ Известные проблемы
+- DOMException в консоли при быстром переключении треков (вызваны тем, что браузер прерывает текущую загрузку аудио при изменении currentTime)
+- плохой UX при медленной сети: состояние "playing" устанавливается сразу, а фактическое воспроизведение начинается с задержкой (можно улучшить через обработку событий canplay / loading и добавить индикатор загрузки)
+
+---
+
+## 🚧 Будущие импрувы
+- обработка ошибок из пункта выше
+- рефакторинг main.js (разделение на модули)
+- добавление скачивания отдельных треков
+- отображение времени и трека при наведении на прогресс-бар
+- использование семантических HTML-тегов
+- перенос логики из DOM в js
+- автогенерация конфига по .cue-файлу
 
 ---
 

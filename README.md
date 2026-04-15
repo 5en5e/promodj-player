@@ -2,7 +2,6 @@
 
 ## 🖼 Screenshot
 ![Screenshot](./assets/screenshot.png)
-![Screenshot-2](./assets/screenshot-2.png)
 
 ## 🔗 [▶ Live demo](https://5en5e.github.io/promodj-player/)
 

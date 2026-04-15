@@ -1,15 +1,15 @@
 # promodj-player
 
+## 📌 What it is
+A web audio player that supports a tracklist within a single audio mix.
+Allows playing individual tracks marked by timestamps.
+
+---
+
 ## 🖼 Screenshot
 ![Screenshot](./assets/screenshot.png)
 
 ## 🔗 [▶ Live demo](https://5en5e.github.io/promodj-player/)
-
----
-
-## 📌 What it is
-A web audio player that supports a tracklist within a single audio mix.
-Allows playing individual tracks marked by timestamps.
 
 ---
 

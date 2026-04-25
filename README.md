@@ -1,4 +1,4 @@
-🌐 Language:
+🌐 Language:  
 🇬🇧 English | 🇷🇺 [Русский](README.ru.md)
 
 # promodj-player

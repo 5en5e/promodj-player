@@ -1,3 +1,6 @@
+🌐 Language:
+🇬🇧 English | 🇷🇺 [Русский](README.ru.md)
+
 # promodj-player
 
 ## 📌 What it is
